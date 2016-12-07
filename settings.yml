@@ -1,0 +1,104 @@
+---
+# ---------------------------
+# Kalliope default settings
+# Use YAML syntax
+# ---------------------------
+
+# ---------------------------
+# Trigger
+# ---------------------------
+# This is the trigger that will catch your magic work to wake up Kalliope
+default_trigger: "snowboy"
+
+# Trigger engine configuration
+# Available engine are:
+# - snowboy
+triggers:
+  - snowboy:
+      pmdl_file: "trigger/kalliope-EN-2-samples.pmdl"
+
+
+# ---------------------------
+# Speech to text
+# ---------------------------
+
+# This is the STT that will be used by default
+default_speech_to_text: "google"
+
+# Spreech to Text engines configuration
+# Available engine are:
+# - google (via SpeechRecognition)
+# -
+speech_to_text:
+  - google:
+      language: "en-EN"
+
+# ---------------------------
+# Text to speech
+# ---------------------------
+# This is the default TTS that will be used by Kalliope to talk.
+default_text_to_speech: "pico2wave"
+# where we store generated audio files from TTS engine to reuse them
+cache_path: "/tmp/kalliope_tts_cache"
+
+# Text to Spreech engines configuration
+# Available engine are:
+# - pico2wave
+# - voxygen
+text_to_speech:
+  - pico2wave:
+      language: "en-US"
+      cache: True
+  - voxygen:
+      voice: "Jenny"
+      cache: True
+  - acapela:
+      language: "sonid15"
+      voice: "Manon"
+      cache: True
+  - googletts:
+      language: "en"
+      cache: True
+  - voicerss:
+      language: "en-us"
+      cache: True
+
+
+# ---------------------------
+# Wake up answers
+# ---------------------------
+# When Kalliope detect the hotword/trigger, he will select randomly a phrase in the following list
+# to notify the user that he's listening for orders
+random_wake_up_answers:
+  - "yes sir?"
+  - "I'm listening"
+  - "I'm listening to you"
+  - "sir?"
+  - "what can i do for you?"
+  - "Speaking"
+  - "how can i help you?"
+
+
+# You can play a sound when Kalliope detect the hotword/trigger instead of saying something from
+# the `random_wake_up_answers`. To active the 'random_wake_up_sounds' you must comment out the 'random_wake_up_answers'
+# The file must be .wav or .mp3 format.
+random_wake_up_sounds:
+  - "trigger/dong.wav"
+  # - "/my/personal/full/path/my_file.mp3"
+
+
+# ---------------------------
+# Rest API
+# ---------------------------
+rest_api:
+  active: True
+  port: 5000
+  password_protected: True
+  login: admin
+  password: secret
+
+# ---------------------------
+# Default Synapse
+# ---------------------------
+# Specify an optional default synapse response in case your order is not found.
+default_synapse: "default-synapse"

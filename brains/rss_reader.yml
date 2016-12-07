@@ -1,0 +1,9 @@
+---
+  - name: "news-lemonde"
+    signals:
+      - order: "what are the sports news"
+    neurons:
+      - rss_reader:
+          feed_url: "https://news.yahoo.com/rss/sports"
+          max_items: 5
+          file_template: templates/rss_new_sport.j2
