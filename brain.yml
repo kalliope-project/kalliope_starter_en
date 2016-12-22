@@ -3,9 +3,7 @@
   - includes:
         - brains/say.yml
         - brains/systemdate.yml
-        - brains/wikipedia.yml
         - brains/neurotransmitter.yml
-        - brains/rss_reader.yml
 
   - name: "default-synapse"
     signals:
