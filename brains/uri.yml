@@ -1,0 +1,12 @@
+---
+  - name: "horoscope-scorpio"
+    signals:
+      - order: "what is my horoscope today"
+    neurons:
+      - say:
+          message: "Scorpio horoscope of the day"
+      - uri:
+          url: "http://theastrologer-api.herokuapp.com/api/horoscope/scorpio/today"
+          method: GET
+          say_template:
+              - "{{ content.horoscope }}"

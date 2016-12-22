@@ -4,6 +4,7 @@
         - brains/say.yml
         - brains/systemdate.yml
         - brains/neurotransmitter.yml
+        - brains/uri.yml
 
   - name: "default-synapse"
     signals:
