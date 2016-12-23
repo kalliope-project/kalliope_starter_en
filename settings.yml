@@ -102,3 +102,11 @@ rest_api:
 # ---------------------------
 # Specify an optional default synapse response in case your order is not found.
 default_synapse: "default-synapse"
+
+# ---------------------------
+# resource directory path
+# ---------------------------
+resource_directory:
+  neuron: "resources/neurons"
+  stt: "resources/stt"
+  tts: "resources/tts"
