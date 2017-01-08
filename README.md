@@ -1,5 +1,5 @@
 # requirements
-/!\ You need to have the (Kalliope Core)[https://github.com/kalliope-project/kalliope] installed before cloning this starter kit.
+/!\ You need to have the [Kalliope Core](https://github.com/kalliope-project/kalliope) installed before cloning this starter kit.
 
 # kalliope starter config en
 
