@@ -15,7 +15,7 @@ default_trigger: "snowboy"
 # - snowboy
 triggers:
   - snowboy:
-      pmdl_file: "trigger/kalliope-EN-2-samples.pmdl"
+      pmdl_file: "trigger/kalliope-EN-7-samples.pmdl"
 
 
 # ---------------------------
