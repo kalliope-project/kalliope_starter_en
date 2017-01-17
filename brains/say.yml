@@ -1,7 +1,6 @@
 ---
   - name: "say-hello"
     signals:
-      - order: "hello"
       - order: "Hello"
     neurons:
       - say:
