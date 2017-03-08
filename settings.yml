@@ -44,13 +44,13 @@ cache_path: "/tmp/kalliope_tts_cache"
 # Text to Spreech engines configuration
 # Available engine are:
 # - pico2wave
-# - voxygen
+# - acapela
+# - pico2wave
+# - googletts
+# - voicerss
 text_to_speech:
   - pico2wave:
       language: "en-US"
-      cache: True
-  - voxygen:
-      voice: "Jenny"
       cache: True
   - acapela:
       language: "sonid15"
@@ -131,3 +131,11 @@ resource_directory:
   neuron: "resources/neurons"
   stt: "resources/stt"
   tts: "resources/tts"
+
+# ---------------------------
+# Global files variables
+# /!\ If a variable is defined in different files, the last file defines the value.
+# ---------------------------
+var_files:
+  - global_variables/variables.yml
+#  - variables2.yml
