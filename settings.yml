@@ -63,6 +63,27 @@ text_to_speech:
       language: "en-us"
       cache: True
 
+# ---------------------------
+# players
+# ---------------------------
+# This is the sound player that will be used by default
+default_player: "mplayer"
+
+# players configuration
+# Available engine are:
+# - mplayer
+# - pyalsaaudio       # no mp3
+# - pyaudioplayer     # no mp3
+# - sounddeviceplayer # no mp3
+players:
+  - mplayer: {}
+  - pyalsaaudio:
+     device: "default"
+     convert_to_wav: True
+  - pyaudioplayer:
+     convert_to_wav: True
+  - sounddeviceplayer:
+     convert_to_wav: True
 
 # ---------------------------
 # Wake up answers
@@ -139,3 +160,13 @@ resource_directory:
 var_files:
   - global_variables/variables.yml
 #  - variables2.yml
+
+# ---------------------------
+# Raspberry Pi GPIO settings
+# ---------------------------
+#rpi:
+#  pin_mute_button: 24
+#  pin_led_started: 23
+#  pin_led_muted: 17
+#  pin_led_talking: 27
+#  pin_led_listening: 22
