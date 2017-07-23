@@ -9,18 +9,18 @@
     }[weekday] | default("")
 -%}
 
-{% set month_word = {"1": "january", "2": "february", "3": "march", "4": "april", "5": "may", "6": "june", "7": "july", "8": "august", "9": "september", "10": "october", "11": "november", "12": "december"}[month] | default("") -%}
+{% set month_word = {"01": "january", "02": "february", "03": "march", "04": "april", "05": "may", "06": "june", "07": "july", "08": "august", "09": "september", "10": "october", "11": "november", "12": "december"}[month] | default("") -%}
 
 {% set day_month_formated = {
-    "1": "first",
-    "2": "second",
-    "3": "third",
-    "4": "fourth",
-    "5": "fifth",
-    "6": "sixth",
-    "7": "seventh",
-    "8": "eighth",
-    "9": "ninth",
+    "01": "first",
+    "02": "second",
+    "03": "third",
+    "04": "fourth",
+    "05": "fifth",
+    "06": "sixth",
+    "07": "seventh",
+    "08": "eighth",
+    "09": "ninth",
     "10": "tenth",
     "11": "eleventh",
     "12": "twelfth",
