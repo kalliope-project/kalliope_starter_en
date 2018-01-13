@@ -4,5 +4,4 @@
       - order: "Hello"
     neurons:
       - say:
-          message:
-            - "Hello {{name}}"
+          message: "Hello {{name}}"

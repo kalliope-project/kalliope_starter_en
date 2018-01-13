@@ -6,9 +6,8 @@
         - brains/neurotransmitter.yml
         - brains/uri.yml
 
-  - name: "default-synapse"
-    signals:
-      - order: "default-synapse"
+  - name: "order-not-found-synapse"
+    signals: []
     neurons:
       - say:
           message:
@@ -19,4 +18,21 @@
             - "Can ou please reformulate your order"
             - "I don't recognize that order"
 
+  - name: "on-triggered-synapse"
+    signals: []
+    neurons:
+      - say:
+          message:
+            - "yes sir?"
+            - "I'm listening"
+            - "I'm listening to you"
+            - "sir?"
+            - "what can i do for you?"
+            - "Speaking"
+            - "how can i help you?"
 
+  - name: "on-start-synapse"
+    signals: []
+    neurons:
+      - say:
+          message: "I'm ready"
