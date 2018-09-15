@@ -115,12 +115,6 @@ rest_api:
   allowed_cors_origin: "*"
 
 # ---------------------------
-# Default Synapse
-# ---------------------------
-# Specify an optional default synapse response in case your order is not found.
-default_synapse: "default-synapse"
-
-# ---------------------------
 # resource directory path
 # ---------------------------
 resource_directory:
