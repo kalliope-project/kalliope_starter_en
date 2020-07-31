@@ -1,7 +1,7 @@
 # requirements
 /!\ You need to have the [Kalliope Core](https://github.com/kalliope-project/kalliope) installed before cloning this starter kit.
 
-This starter kit has been tested with Kalliope v0.5.0.
+This starter kit has been tested with Kalliope v0.7.0.
 
 # kalliope starter config en
 

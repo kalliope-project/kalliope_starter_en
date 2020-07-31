@@ -15,7 +15,8 @@ default_trigger: "snowboy"
 # - snowboy
 triggers:
   - snowboy:
-      pmdl_file: "trigger/kalliope-EN-12samples.pmdl"
+      keywords:
+        - file_path: "trigger/kalliope-EN-12samples.pmdl"
 
 
 # ---------------------------
@@ -41,7 +42,7 @@ speech_to_text:
 # Text to speech
 # ---------------------------
 # This is the default TTS that will be used by Kalliope to talk.
-default_text_to_speech: "pico2wave"
+default_text_to_speech: "googletts"
 # where we store generated audio files from TTS engine to reuse them
 cache_path: "/tmp/kalliope_tts_cache"
 
@@ -137,9 +138,10 @@ var_files:
 # Options
 # -------------
 options:
-#  energy_threshold: 4000                 # Speech to text option
-#  adjust_for_ambient_noise_second: 1     # Speech to text option
-#  stt_timeout: 5                          # Speech to text option
+#  recognizer_multiplier: 1.0                     # Speech to text option
+#  recognizer_energy_ratio: 1.5                   # Speech to text option
+#  recognizer_recording_timeout: 15.0             # Speech to text option
+#  recognizer_recording_timeout_with_silence: 3.0 # Speech to text optio
   deaf: False
   mute: False
 
