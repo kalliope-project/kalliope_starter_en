@@ -15,7 +15,7 @@
             - "I don't know this order"
             - "Please renew your order"
             - "Would you please reword your order"
-            - "Can ou please reformulate your order"
+            - "Can you please reformulate your order"
             - "I don't recognize that order"
 
   - name: "on-triggered-synapse"
